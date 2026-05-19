@@ -1,0 +1,19 @@
+spring:
+  data:
+    redis:
+      host: ${REDIS_HOST:localhost}
+      port: ${REDIS_PORT:6380}
+      password: ${REDIS_PASSWORD:}
+      ttl: 3600
+      timeout: 30000
+
+pgvector:
+  database: dp
+  host: ${PGVECTOR_HOST:localhost}
+  port : ${PGVECTOR_USER:root}
+  user: root
+  password: ${PGVECTOR_PASSWORD:}
+  table: agent_embedding
+
+rag:
+  docs-path: G:\Agent\InfinteChat-Agent\src\main\resources\docs
